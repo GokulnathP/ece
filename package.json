@@ -9,7 +9,7 @@
     "lite": "lite-server",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin *.jpg --out-dir='dist && imagemin *.JPG --out-dir='dist && imagemin *.png --out-dir='dist'",
+    "imagemin": "imagemin *.jpg --out-dir=dist && imagemin *.jpeg --out-dir=dist && imagemin *.JPG --out-dir=dist && imagemin *.png --out-dir=dist",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "bootstrap-social": "^5.1.1",
     "cssmin": "^0.4.3",
     "font-awesome": "^4.7.0",
     "htmlmin": "0.0.7",
